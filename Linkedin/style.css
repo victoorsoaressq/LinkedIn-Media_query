@@ -1,0 +1,564 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+    --colorBackground: #f3f2ef;
+    --colorContent: #fff;
+    --colorPesquisa: #eef3f8;
+    --colorIncones: #666666; 
+    --colorInconesHover: #0f0f0f;
+    --colorBotao: #70b5f9;
+    --colorBotaoHover: #70b5f9;
+    --colorLine: #bcbdbe;
+    --colorLogo: #0a66c2;
+    --colorText1: #191919;
+    --colorText2: #727272;
+    --colorText3: #c0bfbf;
+    --colorText4: #2879c9;
+    --colorWhite: #fff;
+}
+
+.dark-mod:root {
+    --colorBackground: #000000;
+    --colorContent: #1d2226;
+    --colorPesquisa: #38434f;
+    --colorIncones: #bcbdbe;
+    --colorInconesHover: #fff;
+    --colorBotao: #70b5f9;
+    --colorBotaoHover: #70b5f9;
+    --colorLine: #313639;
+    --colorLogo: #bcbdbe;
+    --colorText1: #fff;
+    --colorText2: #c0bfbf;
+    --colorText3: #727272;
+    --colorText4: #2879c9;
+}
+
+::placeholder {
+    color: var(--colorIncones);
+    font-size: 15px;
+}
+
+/*  ---------- COLORTEXT ----------- */
+
+.colortext1 {
+    color: var(--colorText1);
+}
+
+.colortext2 {
+    color: var(--colorText2);
+}
+
+.colortext3 {
+    color: var(--colorText3);
+}
+
+/*  ------------------------------- */
+
+body {
+    background-color: var(--colorBackground);
+}
+
+/*   ---   HEADER   ---   */
+
+header {
+    width: 100%;
+    height: 53px;
+    background-color: var(--colorContent);
+    border-bottom: 2px solid var(--colorLine);
+    position: fixed;
+    z-index: 1;
+}
+
+.nav-global {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 53px;
+}
+
+.divisao {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-right: 2px solid var(--colorLine);
+    width: 950px;
+}
+
+.divisao2 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 170px;
+}
+
+#logo-pesquisa {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 40px;
+    width: 40px;
+    color: var(--colorLogo);
+}
+
+#logo-pesquisa input {
+    position: relative;
+    right: 20px;
+    height: 35px;
+    width: 282px;
+    margin-left: 10px;
+    padding-left: 35px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background-color: var(--colorPesquisa);
+}
+
+#pesquisa-icon {
+    position: relative;
+    left: 18px;
+    z-index: 1;
+}
+
+nav{
+    display: flex;
+}
+
+#icons {
+    margin-right: 20px;
+}
+
+.icons img {
+    height: 24px;
+    border-radius: 50%;
+}
+
+.icons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--colorIncones);
+    margin: 0 15px;
+}
+
+.icons input {
+    height: 25px;
+    width: 25px;
+}
+
+.icons p {
+    font-size: 12px;
+    text-align: center;
+    cursor: pointer;
+}
+
+ion-icon {
+    height: 22px;
+    width: 22px;
+    color: var(--colorIncones);
+}
+
+ion-icon:hover,
+.icons:hover {
+    color: var(--colorInconesHover);
+}
+
+.min {
+    position: absolute;
+    top: 31px;
+    height: 15px;
+    width: 20px;
+}
+
+/*   ------------------------------   MAIN   ----------------------------   */
+
+
+#container-central {
+    display: flex;
+    width: 1120px;
+    margin: 0 auto;
+}
+
+.config-2 {
+    width: 100%;
+    background-color: var(--colorContent);
+    border-radius: 10px;
+    border: 1px solid var(--colorLine);
+    box-shadow: 1px 1px 1px  var(--colorLine);
+}
+
+/* ----------------- CONT1 -------------------------------*/
+
+.cont1 {
+    width: 780px;
+    height: 100%;
+    margin: 75px 10px 10px 0;
+}
+
+/*------------------------- HOME 1 -------------------------*/
+#home-1 {
+    height: 528px;
+    position: relative;
+}
+
+#home-1 img {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+#img-perfil img {
+    position: absolute;
+    top: 80px;
+    left: 23px;
+    height: 161px;
+    width: 161px;
+    border-radius: 50%;
+    border: 5px solid var(--colorContent);
+}
+
+#lapis {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#lapis ion-icon {
+    width: 25px;
+    height: 25px;
+    margin: 15px 20px 0 20px;
+    border-radius: 50%;
+    padding: 6px;
+}
+
+#lapis ion-icon:hover {
+    background-color: var(--colorBackground);
+}
+
+#descritivo-home {
+    display: flex;
+    justify-content: space-between;
+}
+
+#h1-descritovo {
+    padding: 5px 23px;
+    line-height: 24px;
+}
+
+#h1-descritovo p {
+    font-size: 16px;
+    font-weight: 100px;
+}
+
+#h1-descritovo p:last-of-type {
+    font-size: 14px;
+}
+
+span {
+    color: var(--colorText4);
+    font-weight: 600;
+}
+
+span:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.botoes {
+    display: flex;
+    margin: 10px 0;
+}
+
+.botoes button {
+    margin-right: 7px;
+    border-radius: 20px;
+    height: 27px;
+    padding: 0 10px;
+    cursor: pointer;
+}
+
+.btn-1 {
+    color: var(--colorWhite);
+    background-color: var(--colorText4);
+    font-weight: 600;
+    border: none;
+}
+
+.btn-2 {
+    border: 1px solid var(--colorText4);
+    color: var(--colorText4);
+    background-color: var(--colorWhite);
+    font-weight: 600;
+}
+
+.btn-3 {
+    border: 1px solid var(--colorLine);
+    background-color: var(--colorWhite);
+    font-weight: 600;
+    color: var(--colorLine);
+}
+
+#h2-descritivo {
+    display: flex;
+    width: 250px;
+    justify-content: flex-end;
+}
+
+#h2-descritivo img {
+    height: 40px;
+    width: 40px;
+    margin: 0 10px;
+    border-radius: 50%;
+}
+
+#h2-descritivo a,p {
+    font-size: 15px;
+    color: var(--colorText1);
+    text-decoration: none;
+}
+
+#h2-descritivo p:hover {
+    color: var(--colorLogo);
+    text-decoration: underline;
+}
+
+/*--------------------------------------------------*/
+
+#home-2 {
+    height: 360px;
+    margin: 20px 0;
+}
+
+#home-3 {
+    height: 217px;
+    margin: 20px 0;
+}
+
+#home-4 {
+    height: 250px;
+    margin: 20px 0;
+}
+
+#home-5 {
+    height: 144px;
+    margin: 20px 0;
+}
+
+#home-6 {
+    height: 510px;
+    margin: 20px 0;
+}
+
+#home-7 {
+    height: 150px;
+    margin: 20px 0;
+}
+
+#home-8 {
+    height: 510px;
+    margin: 20px 0;
+}
+
+#home-9 {
+    height: 217px;
+    margin: 20px 0;
+}
+
+#home-10 {
+    height: 217px;
+    margin: 20px 0;
+}
+
+/* ----------------- CONT2 -------------------------------*/
+
+.cont2 {
+    width: 320px;
+    height: 100%;
+    margin: 75px 0 10px 10px;
+}
+
+#bloco-1 {
+    height: 120px;
+}
+
+#bloco-2 {
+    height: 250px;
+    margin: 20px 0;
+}
+
+#bloco-3 {
+    height: 635px;
+    margin-bottom: 20px;
+}
+
+#bloco-4 {
+    height: 670px;
+    margin-bottom: 20px;
+}
+
+#bloco-5 {
+    height: 400px;
+    margin-bottom: 20px;
+}
+
+/*  --------------------- BLOCOS ------------------------ */
+
+#bloco-1 {
+    padding: 10px;
+}
+
+#bloco-1 p{
+    color: var(--colorText2);
+    line-height: 50px;
+    margin-left: 10px;
+    font-weight: 600;
+}
+
+#bloco-1 p:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+hr {
+    border: 0.5px solid var(--colorLine); 
+    margin: 0 10px;
+}
+
+#bloco-1 hr {
+    margin: 0 4px;
+}
+
+#bloco-2  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* -----------------------  FOOTER  -------------------------- */
+
+footer {
+    height: 200px;
+    width: 100%;
+}
+
+/*  --------------------- RESPONSIVO ---------------------------- */
+
+@media (max-width : 1400px){
+
+    #container-central {
+        display: flex;
+        justify-content: center;
+        
+    }
+
+    .cont1 {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 700px;
+        margin-top: 75px;
+        
+    }
+
+    .cont2 {
+        width: 320px;
+    }
+
+    #img-perfil img {
+        top: 65px;
+        left: 30px;
+    }
+}
+
+@media (max-width : 1050px){
+
+    #logo-pesquisa input, #pesquisa-icon {
+        display: none;
+    }
+
+   
+}
+
+
+@media (max-width : 1000px) {
+
+    #container-central {
+        width: 950px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+    }
+
+    #icons p, .icons p {
+        display: none;
+    }
+    .divisao {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .cont1 {
+        width: 580px;
+        
+    }
+
+    .cont2{
+        width: 300px;
+    }
+
+    #img-perfil img {
+        top: 15px;
+        left: 30px;
+    }
+}
+
+@media (max-width : 950px) {
+
+    #container-central {
+        width: 700px;
+        display: flex;
+        justify-content: center;
+    }
+
+    #img-perfil img {
+        top: 65px;
+        left: 30px;
+    }
+
+    .cont1 {
+        width: 700px;
+        margin: 75px 0 0 0;
+    }
+
+    .cont2{
+        display: none;
+    }
+}   
+
+@media (min-width : 300px) and (max-width : 700px) {
+
+    #container-central {
+        width: 480px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .cont1 {
+        width: 100%;
+        margin: 60px 0 0 0;
+    }
+
+    #img-perfil img {
+        top: 15px;
+        left: 30px;
+    }
+
+    #h2-descritivo {
+        display: none;
+    }
+} 
